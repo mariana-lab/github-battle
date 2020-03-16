@@ -1,7 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
+import Battle from './components/Battle'
 import Popular from './components/Popular'
+import Uncontrolled from './components/Uncontrolled'
 
 // Component
 // State
@@ -12,7 +14,9 @@ class App extends React.Component{
     render(){
         return (
         <div className='container'>
-            <Popular/>
+            <Battle/>
+            <Uncontrolled/>
+
         </div>
         )
     }
@@ -20,6 +24,6 @@ class App extends React.Component{
 
 //what, where to render
 ReactDOM.render(
-    <App />,
+    <App/>,
     document.getElementById('app')
 )
